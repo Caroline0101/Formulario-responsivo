@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@900&family=Noto+Sans&display=swap');
+
+body{
+    margin: 0;
+    font-family: 'Montserrat Sans', sans-serif;
+}
+
+body * {
+    box-sizing: border-box;
+}
+
+.main-login{
+    width: 100vw;
+    height: 100vh;
+    background:#010326;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.esquerda-login{
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.esquerda-login-img{
+    width: 30vw;
+}
+.esquerda-login > h1 {
+    font-size: 3vw;
+    color: #05F571;
+    padding-left: 5%;
+}
+
+.direita-login{
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-login{
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px 35px ;
+    background: #01043a;
+    border-radius: 20px;
+    box-shadow: 0px 10px 40px #00000056;
+}
+
+.card-login > h1 {
+    color: #05F571;
+    font-weight: 800;
+    margin: 0;
+}
+
+.textfield{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin: 10px 0px;
+}
+
+.textfield > input{
+    width: 100%;
+    border: none;
+    border-radius: 12px;
+    padding: 15px;
+    background: #E8E8E8;
+    color:#010326;
+    font-size: 12pt;
+    box-shadow: 0px 10px 40px #00000056;
+    box-sizing: border-box;
+}
+
+.textfield > label{
+    color: #f2f2f2f2;;
+    margin-bottom: 10px;
+}
+
+.textfield > input::placeholder {
+    color: #010326;;
+}
+
+.botao-login{
+    width: 100%;
+    padding: 16px 0px;
+    margin: 25px;
+    border: none;
+    border-radius: 9px;
+    outline: none;
+    text-transform:uppercase;
+    font-weight: 800;
+    letter-spacing: 3px;
+    color: #010326;
+    background: #05F571;
+    cursor: pointer;
+    box-shadow: 0px 10px 40px -12px #00ff8052;
+    
+}
+
+
+.botao-login:hover{
+    background-color: #13934f;
+    
+}
+
+.botao-login:active{
+    color: white;
+}
+
+@media only screen and (max-width: 950px) {
+    .card-login{
+        width:85%;
+    }
+}
+@media only screen and (max-width: 600px) {
+    .main-login{
+        flex-direction:column;
+    }
+
+    .esquerda-login > h1{
+        display:none;
+    }
+
+    .esquerda-login{
+        width: 100%;
+        height: auto;
+    }
+
+    .diferita-login{
+        width: 100%;
+        height: auto;
+    }
+
+    .esquerda-login-img{
+        width: 50vw;
+    }
+
+    .card-login{
+        width: 90%;
+    }
+}
+
